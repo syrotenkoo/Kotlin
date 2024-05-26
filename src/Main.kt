@@ -48,7 +48,6 @@ fun addEmail(str: String) {
         var delim1 = words[3].indexOf("@")
         var delim2 = words[3].indexOf(".")
         var parts = Array(3, {""})
-        var correct: Boolean
 
         parts[0] = words[3].subSequence(0, delim1).toString()
         parts[1] = words[3].subSequence(delim1 + 1, delim2).toString()
@@ -56,7 +55,6 @@ fun addEmail(str: String) {
 
         for(i in parts) {
             if(i.length < 2) {
-                correct = false
                 return
             } else {
                 println("Некорректный адрес электронной почты")
