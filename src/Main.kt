@@ -47,8 +47,6 @@ fun addEmail(str: String) {
     if(words[3].contains('@') && words[3].contains('.')) {
         var delim1 = words[3].indexOf("@")
         var delim2 = words[3].indexOf(".")
-        println(delim1)
-        println(delim2)
         var parts = Array(3, {""})
         var correct: Boolean
 
